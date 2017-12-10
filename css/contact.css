@@ -12,3 +12,77 @@
 .padded {
     padding: 2vw;
 }
+
+.contacts {
+    background-color: #fcf5f7;
+    text-align: center;
+}
+
+.contacts h4 {
+    margin-bottom: 2vh;
+}
+
+.card {
+    border: 1px solid #e6e9ed;
+    width: 100%;
+}
+
+.card-img-top {
+    margin-bottom: 2vh;
+    width: 100%;
+    height: auto;
+}
+
+.card-text {
+    padding: 2vh;
+}
+
+.form-control {
+    margin-right: 2vh;
+    font-size: 14px;
+    line-height: 25px;
+    background: #f8fafd;
+    border-radius: 3px;
+    color: #73879c !important;
+    resize: none;
+    vertical-align: middle;
+    border: 1px solid #e6e9ed;
+    transition: all 200ms ease-out;
+    -webkit-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+}
+
+textarea:focus,
+textarea.form-control:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border: 1px solid #bcc7d1;
+    box-shadow: none
+}
+
+.slidelines {
+    line-height: 100%;
+    position: relative;
+    border-bottom: 1px solid #ced7e0;
+}
+
+.slidelines span {
+    padding: 0 .5em;
+    position: relative;
+    top: .5em;
+    background: #f2f5f7;
+}

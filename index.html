@@ -11,9 +11,9 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,900,300,700|Sacramento" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,900,300,700|Sacramento|Source+Sans+Pro:400,700,400italic,700italic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script src="js/main.js"></script>
+
     <title>My page</title>
 </head>
 
@@ -21,11 +21,12 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
     <div id="social">
         <div class="row">
             <div class="container">
                 <div class="col-sm-6">
-
+                    <p id="odpocet" class="float-left" data-konec="05/28/2018 08:00:00" data-hlaska="Čas vypršel!" data-zbyva="Do státnic zbývá: "></p>
                 </div>
                 <div class="col-sm-6 ml-auto" style="text-align: right">
                     <a href="https://facebook.com/josmancik"><i class="fa fa-facebook-f"></i></a>
@@ -49,17 +50,17 @@
                         <a class="nav-link" href="index.html">Domů <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="blog.html">Blog</a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="reference.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Reference
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="detekce-koure.html">Detekce kouře v obrazech</a>
+                            <a class="dropdown-item" href="adr-registr.html">ADR Registr iOS</a>
+                            <a class="dropdown-item" href="weather.html">Počasí</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -79,25 +80,22 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <img class="d-block img-fluid" src="img/banner.jpg" alt="First slide" style="height:84vh; width:100%">
+                <div class="carousel-item active" style="background-image: url(img/img1.jpg)">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>...</h3>
-                        <p>...</p>
+                        <h1><span>Programátor</span></h1>
+                        <p>Student Vysoké školy báňské - Technické univerzity v Ostravě Fakulty elektrotechniky a informatiky, analyst programmer aplikací pro platformu iOS ve společnosti CGI.</p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block img-fluid" src="img/img2.jpg" alt="Second slide" style="height:84vh; width:100%">
+                <div class="carousel-item" style="background-image: url(img/img2.jpg)">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>...</h3>
-                        <p>...</p>
+                        <h1><span>Hasič</span></h1>
+                        <p>Člen Jednotky Sboru dobrovolných hasičů Ostrava - Radvanice (JPO II/2). Člen Sboru dobrovolných hasičů a výjezdové jednotky Kyjovice (JPO III)</p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block img-fluid" src="img/img3.jpg" alt="Third slide" style="height:84vh; width:100%">
+                <div class="carousel-item" style="background-image: url(img/img3.jpg)">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>...</h3>
-                        <p>...</p>
+                        <h1><span>Turista</span></h1>
+                        <p>Rád chodím ve volném čase po horách a různě po krajinách.</p>
                     </div>
                 </div>
             </div>
@@ -114,36 +112,36 @@
         <div class="jumbotron white">
             <div class="container">
 
-                <h2>Work</h2>
+                <h1>Co vlastně dělám?</h1>
                 <p></p>
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="card" style="width: 20rem;">
-                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
                             <div class="card-block">
-                                <h4 class="card-title">Card title</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h2 class="card-title">Detekce kouře v obrazech</h2>
+                                <p class="card-text">Bakalářský projekt Detekce kouře v obrazech za použití OpenCV knihovny. Ve fázi rozpracovaný.</p>
+                                <a href="reference.html#smoke-detection" class="txt-btn">Číst více <i class="fa fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="card" style="width: 20rem;">
-                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <i class="fa fa-mobile" aria-hidden="true"></i>
                             <div class="card-block">
-                                <h4 class="card-title">Card title</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h2 class="card-title">Mobilní aplikace iOS</h2>
+                                <p class="card-text">Pracuji jako analyst programmer pro iOS ve společnosti CGI. Ve volném čase se věnuji vývoji své aplikace ARD Registr.</p>
+                                <a href="reference.html#ios" class="txt-btn">Číst více <i class="fa fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="card" style="width: 20rem;">
-                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <i class="fa fa-cloud" aria-hidden="true"></i>
                             <div class="card-block">
-                                <h4 class="card-title">Card title</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h2 class="card-title">Internetová aplikace Počasí</h2>
+                                <p class="card-text">V rámci předmětu Vývoj internetových aplikací jsem vytvořil internetovou aplikaci počasí.</p>
+                                <a href="reference.html#weather" class="txt-btn">Číst více <i class="fa fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -153,16 +151,8 @@
 
         <div class="jumbotron">
             <div class="container">
-                <h2>Check my references</h2>
-                <p>Projects that I created.</p>
-                <div class="row">
-                    <div class="col-sm-6">
+                <h1>Reference</h1>
 
-                    </div>
-                    <div class="col-sm-6">
-
-                    </div>
-                </div>
             </div>
         </div>
         <div class="jumbotron white">
@@ -181,14 +171,19 @@
                     <p>Student project written by student of VSB - TUO &copy; Jan Osmancik 2017</p>
                 </div>
                 <div class="col-md-6">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">References</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html">Domů</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="reference.html">Reference</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
                 </div>
             </div>
         </div>
     </footer>
+
+    <a id="scrollUp" href="#top">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </a>
+
 </body>
 
 </html>

@@ -1,0 +1,10 @@
+.container {
+    text-align: justify !important;
+}
+
+img {
+    margin: 5%;
+    width: 90%;
+    border-radius: 50%;
+    box-shadow: 0 0 15px;
+}

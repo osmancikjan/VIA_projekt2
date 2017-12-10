@@ -1,0 +1,14 @@
+#map {
+    margin: 0;
+    height: 50vh;
+    width: 100%;
+    border-bottom: 1px solid #d9e0e6;
+}
+
+.container.padded {
+    padding-top: 10vh;
+}
+
+.padded {
+    padding: 2vw;
+}

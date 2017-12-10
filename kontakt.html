@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Jan Osmancik">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,900,300,700|Sacramento" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/contact.css" rel="stylesheet" type="text/css">
+    <title>My page</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZaf0hmN0apNiXfoSbiZAeC1dt7OZPMWs&callback=initMap"></script>
+    <script src="js/main.js"></script>
+    <div id="social">
+        <div class="row">
+            <div class="container">
+                <div class="col-sm-6">
+
+                </div>
+                <div class="col-sm-6 ml-auto" style="text-align: right">
+                    <a href="https://facebook.com/josmancik"><i class="fa fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/jan-osmančík-33670987"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://plus.google.com/u/0/104952156178520321576"><i class="fa fa-google-plus"></i></a>
+                    <a href="https://github.com/osmancikjan"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-toggleable-md bg-faded">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">[osmancikjan]</a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Domů <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Reference
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--        MAIN        -->
+
+    <main role="main">
+
+        <div id="map">
+            <!-- MAP WOULD BE HERE-->
+        </div>
+
+
+        <div class="intouch">
+
+            <div class="it-content">
+            </div>
+        </div>
+
+        <div class="container padded">
+            <div class="row">
+                <div class="col-sm-8">
+                    <form id="contactForm padded">
+                        <div class="col-sm-6">
+                            <div class="form-group row">
+                                <h2>Kontaktní formulář</h2>
+                            </div>
+                            <div class="form-group row">
+                                <input type="text" class="form-control" id="nameInput" placeholder="Jméno (vyžadováno)">
+                            </div>
+                            <div class="form-group row">
+                                <input type="email" class="form-control" id="emailInput" placeholder="Email (vyžadováno)">
+                            </div>
+                            <div class="form-group row">
+                                <input type="text" class="form-control" id="subjectInput" placeholder="Předmět">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group row">
+                                <textarea class="form-control" id="textInput" rows="7" placeholder="Zpráva"></textarea>
+                            </div>
+                            <div class="form-group row">
+                                <button type="submit" class="btn btn-success">Odeslat</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-4 padded">
+                    <div class="jumbotron border-reset">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!--    END OF MAIN     -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Student project written by student of VSB - TUO &copy; Jan Osmancik 2017</p>
+                </div>
+                <div class="col-md-6">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">References</a></li>
+                    <li><a href="#">Contact</a></li>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

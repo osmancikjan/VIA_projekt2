@@ -5,6 +5,11 @@
     border-bottom: 1px solid #d9e0e6;
 }
 
+.alert-danger {
+    display: none;
+    width: 100%;
+}
+
 .container.padded {
     padding-top: 10vh;
 }

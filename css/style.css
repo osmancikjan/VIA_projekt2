@@ -251,11 +251,19 @@ img {
     margin-bottom: 15vh;
 }
 
-.carousel-caption>h1>span {
+.dark-span {
     color: #FFF;
-    font-size: 73px;
+    background: #2f4052;
+    padding: 5px 10px;
+    opacity: 0.8;
+}
+
+.dark-span-h1 {
+    color: #FFF;
     background: #2f4052;
     padding: 5px 30px;
+    font-size: 73px;
+    opacity: 0.8;
 }
 
 .carousel-item {

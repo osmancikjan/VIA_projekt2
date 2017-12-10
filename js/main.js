@@ -2,8 +2,25 @@ $(function() {
     $(window).ready(function() {
         odpocet(document.getElementById('odpocet'));
         $('#contactForm').on('submit', function(e) {
-            console.log(document.getElementById("jmeno"));
+            var jmeno = document.getElementById("jmeno").value;
+            var subject = document.getElementById("subject").value;
+            var valid = parseInt(document.getElementById("valid").value);
+            var message = document.getElementById("message").value;
+            var datum = new Date();
+            var dnes = parseInt(datum.getDate());
+
+            if (jmeno !== "" && valid === dnes) {
+                var link = "mailto:j.osmancik@gmail.com" +
+                    "?subject=" + encodeURIComponent(subject) +
+                    "&body=" + encodeURIComponent(message + '\n \n' + jmeno + '\n');
+                window.location.href = link;
+            } else {
+                $('.alert-danger')
+                $('.alert-danger').show();
+            }
+            return false;
         })
+
     })
 });
 
